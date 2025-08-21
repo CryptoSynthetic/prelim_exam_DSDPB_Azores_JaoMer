@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo - Modern & Professional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body class="jaobody">
+    <div class="container">
+        <div class="demo-card">
+           
+            <div class="header animated">
+                <div class="logo-jao">
+                      <i class="fas fa-object-group"></i>
+                </div>
+                <h1 class="jaoh1">Demo Website</h1>
+                <p class="jaosubtitle">Built with CSS Flexbox</p>
+            </div>
+
+          
+            <div class="jaodescription animated delay-1">
+                <p>A complete <strong>professional website</strong> built entirely with CSS Flexbox.</p>
+                <p>Explore modern layouts, responsive design, and clean code - all accomplished using only HTML and CSS Flexbox techniques.</p>
+            </div>
+
+        
+            <div class="features">
+                <div class="feature animated delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Homepage Layout</h3>
+                    <p>Professional homepage built with Flexbox</p>
+                </div>
+                
+                <div class="feature animated delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <h3>Navigation Bar</h3>
+                    <p>Responsive navigation using Flexbox</p>
+                </div>
+                
+                <div class="feature animated delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Blog Cards</h3>
+                    <p>Card-based layouts with Flexbox</p>
+                </div>
+                
+                <div class="feature animated delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Adapts to all screen sizes</p>
+                </div>
+            </div>
+
+        
+            <div class="explore animated delay-3">
+                <h3><i class="fas fa-compass"></i> Explore the Website</h3>
+                <div class="nav-buttons">
+                    <a href="Home.html" class="nav-button">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="Blog.html" class="nav-button">
+                        <i class="fas fa-blog"></i> Blog
+                    </a>
+                </div>
+            </div>
+
+     
+            <div class="cta-section animated delay-4">
+                <a href="Home.html" class="cta-button">
+                    <i class="fas fa-arrow-right"></i> Enter Website
+                </a>
+                
+                <div class="secondary-links">
+                    <a href="Blog.html" class="secondary-link">
+                        <i class="fas fa-eye"></i> View Blog Page
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer animated delay-4">
+                <p>Professional website built entirely with CSS Flexbox</p>
+                <p>
+                    <a href="https://jovenisrael.github.io/flexbox-prelim/index.html">
+                        <i class="fas fa-arrow-right"></i> Learn how to build this
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', function() {
+            const elementsToAnimate = document.querySelectorAll('.animated');
+            
+            setTimeout(() => {
+                elementsToAnimate.forEach(el => {
+                    el.style.opacity = '0';
+                    el.classList.add('animated');
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
